@@ -1,12 +1,23 @@
 const express = require('express');
 const routes = require('./routes');
+const app = express();
+const PORT = process.env.PORT || 3001;
 
+// ****MISSING CONFIG FOLDER****
 // import sequelize connection
 const sequelize = require('./config/connection');
 
+// ****MISSING ****
+// express handlebars
+const exphbs = require('express-handlebars');
 
-const app = express();
-const PORT = process.env.PORT || 3001;
+// ****MISSING****
+// express middleware
+const session = require('express-session');
+app.use(session(sess));
+
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
