@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS listup_db;
+CREATE DATABASE listup_db;
