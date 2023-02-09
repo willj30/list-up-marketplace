@@ -6,10 +6,10 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
 // Initialize category model (table) by extending off Sequelize's Model class
-class category extends Model {}
+class Category extends Model {}
 
 // set up fields and rules for category model
-category.init( 
+Category.init( 
 { // define columns 
     id: {
         type: DataTypes.INTEGER,
@@ -32,4 +32,4 @@ category.init(
 );
 
 
-module.exports = category;
+module.exports = Category;
