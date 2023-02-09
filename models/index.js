@@ -1,4 +1,5 @@
 // import models
+const User = require('./User');
 const Product = require('./product');
 const Category = require('./category');
 
@@ -18,5 +19,6 @@ Category.hasMany(Product, {
 
 module.exports = {
     Product,
-    Category
+    Category,
+    User
   };
