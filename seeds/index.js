@@ -3,7 +3,7 @@ const seedProducts = require('./product-seeds');
 
 // ****MISSING CONFIG FOLDER****
 // import our database connection from config.js
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection');
 
 
 const seedAll = async () => {
