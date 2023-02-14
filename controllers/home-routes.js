@@ -41,12 +41,12 @@ router.get('/category/:id', async (req, res) => {
           {
             model: Product,
             attributes: [
-              'id',
-              'title',
-              'artist',
-              'exhibition_date',
+              'product_name',
+              'price',
+              'seller',
               'filename',
               'description',
+              'category_id',
             ],
           },
         ],
