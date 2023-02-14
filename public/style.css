@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+#custom h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 55px;
+    color: black;
+}

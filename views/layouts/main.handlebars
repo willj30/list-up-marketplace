@@ -3,18 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width, initial-scale-1">
-        <title>List Up Marketplace</title>
-        
+        <title>ListUp Marketplace</title>
+        <link rel="stylesheet" type="text/css" href="/list-up-marketplace/public/style.css">
 <!--href to Bulma styling-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <!--href to Font Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--href to Google Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
 
-<body>
-    <section class="section" >
+<body id = "custom">
+    <!-- <section class="section" >
         <div class="container">
             <h1 class="title">
                 ListUp Marketplace 
@@ -26,73 +28,121 @@
     </section> -->
 
     <section class = "hero has-background-white">
-        <div class = "hero-body">
-            <div class = "container">
-                <figure class = "image left">
-                    <img src="/public/images/ListUp Logo.jpg" style = "max-width: 256px">
-                </figure>
+        <div class = "hero-body" style = "width: 980px">
+            <div class="columns">
+                <div class="column is-half">
+                    <img src="public/images/ListUp Logo.jpg" style="width: 296px; height: 156px">
+                </div>
+                <div class="column is-half has-text-centered">
+                    <h2 class = "title">Welcome to List Up Marketplace!!</h2>
+                </div>
             </div>
+                <nav>
+                <a href="/">Home</a>
+                {{#if loggedIn}}
+                <button id="logout" class="btn-no-style">Logout</button>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
+                </nav>
         </div>
     </section>
 
-    <section class = "section">
+    <!-- <style>
+        .column {
+            height: 300px;
+            position: relative;
+        }
+        .media-content,
+        .media {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            bottom: 0;
+            object-fit: cover;
+        }
+        .title {
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+    </style> -->
+
+    <section class = "section has-background-light">
         <div class = "container">
             <div class = "columns">
                 <div class = "column">
-                    <a href="https://localhost:3001/category/1">
-                    <div class = "notification">
-                    
-                    Modded Cars
-                    <img src="/public/images/modded-cars.jpg" style = "max-width: 239px">
-                    </div>
-                    </a>
+                    <article class = "notification is-primary py-1 px-1">
+                        <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
+                            <div class = "media-left">
+                                <span class = "icon is-medium">
+                                    <i class="fa-solid fa-2x fa-car"></i>
+                                </span>
+                            </div>
+                            <h1 class = "title is-size-4">Vehicles</h1>
+                        </div>
+                    <article class = "meida is-fullwidth">
+                            <img class="image is-fullwidth" src = "public/images/modded-cars.jpg" style="height: 300px;">
+                    </article>
+                    </article>
                 </div>
                 <div class = "column">
-                    <a href="https://localhost:3001/category/2">
-                    <div class = "notification">
-                        
-                    Retro Games
-                    <img src = "/public/images/retro-games.jpg" style = "max-width: 239px">
-                    </div>
-                    </a>
+                    <article class = "notification is-info py-1 px-1">
+                        <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
+                            <div class = "media-left">
+                                <span class = "icon is-medium">
+                                    <i class="fa-solid fa-2x fa-gamepad"></i>
+                                </span>
+                            </div>
+                            <h1 class = "title is-size-4">Video Games</h1>
+                        </div>
+                    <article class = "meida is-fullwidth">
+                            <img class="image is-fullwidth" src = "public/images/retro-games.jpg" style="height: 300px;">
+                    </article>
+                    </article>
                 </div>
                 <div class = "column">
-                    <a href="https://localhost:3001/category/3">
-                    <div class = "notification">
-                        
-                    Upcycled Furniture
-                    <img src = "/public/images/upcycled-furniture.jpg" style = "max-width: 239px">
-                    </div>
-                    </a>
+                    <article class = "notification is-danger py-1 px-1">
+                        <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
+                            <div class = "media-left">
+                                <span class = "icon is-medium">
+                                    <i class="fa-solid fa-2x fa-couch"></i>
+                                </span>
+                            </div>
+                            <h1 class = "title is-size-4">Furniture</h1>
+                        </div>
+                    <article class = "meida is-fullwidth">
+                            <img class="image is-fullwidth" src = "public/images/upcycled-furniture.jpg" style="height: 300px;">
+                    </article>
+                    </article>
                 </div>
                 <div class = "column">
-                    <a href="https://localhost:3001/category/4">
-                    <div class = "notification">
-                        Vintage Clothing
-                          <img src = "/public/images/vintage-clothes.jpg" style = "max-width: 239px">
-                        
-                    </div>
-                   </a>
+                    <article class = "notification is-warning py-1 px-1">
+                        <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
+                            <div class = "media-left">
+                                <span class = "icon is-medium">
+                                    <i class="fa-solid fa-2x fa-shirt has-text-white"></i>
+                                </span>
+                            </div>
+                            <h1 class = "title is-size-4">Clothing</h1>
+                        </div>
+                    <article class = "meida is-fullwidth">
+                            <img class="image is-fullwidth" src = "public/images/vintage-clothes.jpg" style="height: 300px;">
+                    </article>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <header>
-        <h1>Welcome to List Up Marketplace!!</h1>
-    </header>
-    <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-    </nav>
-
     <main>
     <aside>
-        <h2>Happy Shopping!</h2>
+        <h3>Happy Shopping!</h3>
     </aside>
     
     <div class="shop">
@@ -105,7 +155,6 @@
 
 </body>
 
-
 <style>
 
 .center {
@@ -115,3 +164,5 @@
         }   
     </style>
 </html>     
+
+
