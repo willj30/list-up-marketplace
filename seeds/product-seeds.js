@@ -54,7 +54,7 @@ const productData = [
     product_name: 'Super Nintendo',
     price: 150.50,
     seller: 'Will J',
-    filename: '11-nintendo.jpg',
+    filename: 'nintendo.jpg',
     description: 'Super Ninendo with one Remote control',
     category_id: 2,
     
