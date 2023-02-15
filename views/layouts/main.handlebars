@@ -20,9 +20,9 @@
         <div class = "hero-body" style = "width: 980px">
             <div class="columns">
                 <div class="column is-half">
-                    <img src="/ListUp Logo 2.jpg" style="width: 296px; height: 156px">
+                    <img src="/images/ListUp Logo 2.jpg" style="width: 296px; height: 156px">
                 </div>
-                <div class="column is-half has-text-centered">
+                <div class="column is-full has-text-centered">
                     <h2 class = "title">Welcome to List Up Marketplace!!</h2>
                         <p class="subtitle">
                             A marketplace to buy or sell used, modified, or rare items from around the globe! 
@@ -46,17 +46,17 @@
                 <div class = "column">
                     <article class = "notification is-primary py-1 px-1">
                         <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
-                            <div class = "media-left">
+                            <div class = "media-content">
                                 <span class = "icon is-large">
                                     <i class="fa-solid has-text-black fa-2x fa-car"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Vehicles</h1>
+                            <h1 class = "title">Modded Vehicles</h1>
                         </div>
                     <article class = "meida is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/4"> 
-                            <img class="image is-fullwidth" src = "/modded-cars.jpg" style="height: 300px;">
+                            <img class="image is-fullwidth" src = "/images/modded-cars.jpg" style="height: 300px;">
                     </article>
                     </article>
                         </a>
@@ -70,12 +70,12 @@
                                     <i class="fa-solid has-text-black fa-2x fa-gamepad"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Video Games</h1>
+                            <h1 class = "title">Retro Video Games</h1>
                         </div>
-                    <article class = "meida is-fullwidth">
+                    <article class = "media is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/2"> 
-                            <img class="image is-fullwidth" src = "/retro-games.jpg" style="height: 300px;">
+                            <img class="image is-fullwidth" src = "/images/retro-games.jpg" style="height: 300px;">
                     </article>
                     </article>
                         </a>
@@ -89,12 +89,12 @@
                                     <i class="fa-solid has-text-black fa-2x fa-couch"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Furniture</h1>
+                            <h1 class = "title">Upcycled Furniture</h1>
                         </div>
-                    <article class = "meida is-fullwidth">
+                    <article class = "media is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/1"> 
-                            <img class="image is-fullwidth" src = "/upcycled-furniture.jpg" style="height: 300px;">
+                            <img class="image is-fullwidth" src = "/images/upcycled-furniture.jpg" style="height: 300px;">
                     </article>
                     </article>
                         </a>
@@ -108,12 +108,12 @@
                                     <i class="fa-solid has-text-black fa-2x fa-shirt has-text-white"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Clothing</h1>
+                            <h1 class = "title">Vintage Clothing</h1>
                         </div>
-                    <article class = "meida is-fullwidth">
+                    <article class = "media is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/3"> 
-                            <img class="image is-fullwidth" src = "/vintage-clothes.jpg" style="height: 300px;">
+                            <img class="image is-fullwidth" src = "/images/vintage-clothes.jpg" style="height: 300px;">
                     </article>
                     </article>
                         </a>
@@ -125,8 +125,12 @@
 
     <main>
     <aside>
-        <h3>Please log in to see items for sale.</h3>
-        <h3>Happy Shopping!</h3>
+        
+        <h3>Please log in above to see items for sale.</h3>
+     
+        {{#if loggedIn}}
+        <h2>Happy Shopping!</h2>
+        {{/if}}
     </aside>
     
     <div class="shop">
