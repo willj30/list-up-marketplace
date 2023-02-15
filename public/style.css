@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
+#custom h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 40px;
+    color: black;
+}
+
 #custom h2 {
     font-family: 'Oleo Script', cursive;
-    font-size: 55px;
-    color: black;
+    font-size: 58px;
+    color: rgb(33, 33, 165);
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-family: 'Oleo Script', cursive;
+    padding: 20px;
+}
+
+.hero {
+    background-color: black;
+}
+
+.section {
+    background: linear-gradient(to bottom, black, black, #2f67cf);
 }
