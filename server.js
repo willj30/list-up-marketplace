@@ -24,8 +24,13 @@ app.use(session(sess));
 
 const hbs = exphbs.create();
 
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+
+app.use(express.static('images'));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

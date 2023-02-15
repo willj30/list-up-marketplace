@@ -46,7 +46,7 @@ const productData = [
     product_name: 'Nintendo 64',
     price: 145.00,
     seller: 'Juan G',
-    filename: 'ningendo64.jpg',
+    filename: 'nintendo64.jpg',
     description: 'Black Nintendo 64 with two Remote controls and one game',
     category_id: 2,
   },
