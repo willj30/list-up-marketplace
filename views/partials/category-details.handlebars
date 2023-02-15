@@ -1,11 +1,16 @@
-<section class="card">
- 
-    <header>{{product_name}}</header>
+ <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+    <header class="title">{{product_name}}</header>
+    <figure class = "image is-4by3">
     <img src="/images/{{filename}}" alt="{{description}}">
-    <p>{{description}}</p>
+    </figure>
+    <p class="subtitle">Description: {{description}}</p>
     
-      <p>Seller: {{seller}}</p>
-      <p>Price: {{price}}</p>
+      <p class="subtitle">Seller: {{seller}}</p>
+      <p class="subtitle">Price: {{price}}</p>
+    </article>
+  </div>
+
+
     
-  
-</section>
+         
