@@ -10,8 +10,4 @@ router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
 });
 
-router.get("/main", (req, res) => {
-  res.render("main");
-});
-
 module.exports = router;

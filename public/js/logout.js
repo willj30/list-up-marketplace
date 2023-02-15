@@ -12,9 +12,3 @@ const logout = async () => {
   };
   
   document.querySelector('#logout').addEventListener('click', logout);
-
-  // document.querySelector('.card').addEventListener('click', ()=>{
-  //   var detail = document.querySelector('.is-hidden')
-  //   detail.classList.remove('is-hidden')
-  //   console.log('logging')
-  // })
