@@ -14,9 +14,7 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const categories = dbCategoryData.map((category) =>
-      category.get({ plain: true })
-    );
+    const categories = dbCategoryData.map((category) => category.get({ plain: true }));
 
     res.render('homepage', {
       categories,
