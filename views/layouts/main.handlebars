@@ -22,13 +22,13 @@
                 <div class="column is-half">
                     <img src="/images/ListUp Logo 2.jpg" style="width: 296px; height: 156px">
                 </div>
-                <div class="column is-full has-text-centered">
+                <div class="column is-half has-text-centered">
                     <h2 class = "title">Welcome to List Up Marketplace!!</h2>
                         <p class="subtitle">
                             A marketplace to buy or sell used, modified, or rare items from around the globe! 
                         </p>
                 </div>
-            </div>
+                <div class="column is-one-third has-text-right">
                 <nav>
                 <a href="/">Home</a>
                 {{#if loggedIn}}
@@ -37,6 +37,7 @@
                 <a href="/login">Login</a>
                 {{/if}}
                 </nav>
+            </div>
         </div>
     </section>
 
@@ -46,12 +47,12 @@
                 <div class = "column">
                     <article class = "notification is-primary py-1 px-1">
                         <div class = "is-flex is-flex-direction-row is-fullwidth m-auto">
-                            <div class = "media-content">
+                            <div class = "media-left">
                                 <span class = "icon is-large">
                                     <i class="fa-solid has-text-black fa-2x fa-car"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Modded Vehicles</h1>
+                            <h1 class = "title">Vehicles</h1>
                         </div>
                     <article class = "meida is-fullwidth">
                         {{#if loggedIn}}
@@ -70,9 +71,9 @@
                                     <i class="fa-solid has-text-black fa-2x fa-gamepad"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Retro Video Games</h1>
+                            <h1 class = "title">Video Games</h1>
                         </div>
-                    <article class = "media is-fullwidth">
+                    <article class = "meida is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/2"> 
                             <img class="image is-fullwidth" src = "/images/retro-games.jpg" style="height: 300px;">
@@ -89,9 +90,9 @@
                                     <i class="fa-solid has-text-black fa-2x fa-couch"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Upcycled Furniture</h1>
+                            <h1 class = "title">Furniture</h1>
                         </div>
-                    <article class = "media is-fullwidth">
+                    <article class = "meida is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/1"> 
                             <img class="image is-fullwidth" src = "/images/upcycled-furniture.jpg" style="height: 300px;">
@@ -108,12 +109,12 @@
                                     <i class="fa-solid has-text-black fa-2x fa-shirt has-text-white"></i>
                                 </span>
                             </div>
-                            <h1 class = "title">Vintage Clothing</h1>
+                            <h1 class = "title">Clothing</h1>
                         </div>
-                    <article class = "media is-fullwidth">
+                    <article class = "meida is-fullwidth">
                         {{#if loggedIn}}
                         <a href="/category/3"> 
-                            <img class="image is-fullwidth" src = "/images/vintage-clothes.jpg" style="height: 300px;">
+                            <img class="image is-fullwidth" src = "/images/retro-games.jpg" style="height: 300px;">
                     </article>
                     </article>
                         </a>
@@ -124,14 +125,13 @@
     </section>
 
     <main>
-    <aside>
-        
-        <h3>Please log in above to see items for sale.</h3>
-     
+    <aside class = "has-text-centered">
         {{#if loggedIn}}
-        <h2>Happy Shopping!</h2>
+        <h3>Happy Shopping!</h3>
         {{/if}}
+        <h4 class = "has-text-right px-5">Please log in to see items for sale. Thanks!</h4>
     </aside>
+
     
     <div class="shop">
         {{{body}}}
