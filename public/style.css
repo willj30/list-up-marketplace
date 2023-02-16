@@ -25,3 +25,19 @@
 .section {
     background: linear-gradient(to bottom, black, black, #2f67cf);
 }
+
+#custom h3 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+    color: black;
+    background-color: #2f67cf;
+}
+
+#custom h4 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    color: black;
+    background-color: #2f67cf;
+}
+
+/* CSS */
