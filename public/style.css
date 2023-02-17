@@ -40,4 +40,8 @@
     background-color: #2f67cf;
 }
 
-/* CSS */
+#custom h5 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 40px;
+    color: black;
+}
